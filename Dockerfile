@@ -16,7 +16,6 @@ php7.1-mcrypt \
 php7.1-mbstring \
 php7.1-gd \
 php-imagick \
-php-redis \
 php-memcache \
 php-pear \
 php-xml \
