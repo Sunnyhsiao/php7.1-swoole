@@ -20,7 +20,8 @@ php-memcache \
 php-pear \
 php-xml \
 php7.1-xml \
-php7.1-dev
+php7.1-dev \
+php7.1-zip
 
 RUN wget https://github.com/swoole/swoole-src/archive/v4.3.3.tar.gz
 RUN tar zxfv v4.3.3.tar.gz && rm -rf v4.3.3.tar.gz
