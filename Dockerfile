@@ -35,4 +35,9 @@ RUN phpize && ./configure \
 --enable-mysqlnd && \
 make clean && make install
 
+RUN php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php && \
+php composer-setup.php && \
+php -r "unlink('composer-setup.php');" && \
+mv composer.phar /usr/local/bin/composer
+
 RUN echo "extension=swoole.so" >> /etc/php/7.1/cli/php.ini
